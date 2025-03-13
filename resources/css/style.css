@@ -51,11 +51,41 @@ main a {
 }
 
 main a:hover {
-    box-shadow: 0 0 20px var(--primary-color); /* Stronger glow effect */
+    box-shadow: 0 0 20px var(--primary-color);
 }
 
-main a:active {
+main a:active, footer .social-media a:active {
     outline: 2px solid var(--primary2-color);
     outline-offset: 4px;
-    box-shadow: 0 0 20px 5px var(--primary2-color);
+}
+
+
+footer {
+    background: var(--card-background-color);
+}
+footer section.footer-nav {
+    font-size: 16px;
+}
+footer section.footer-nav a:hover {
+    text-decoration: underline;
+}
+footer .social-media a:hover {
+    background: var(--primary-color);
+}
+footer .social-media a:active {
+    background: var(--primary-color);
+}
+footer p.copyright {
+    background: var(--background-color);
+    font-size: 16px;
+}
+
+.footer-separator {
+    position: absolute;
+    left: 50%;
+    top: 15%;
+    height: 70%;
+    width: 1px;
+    background-color: rgba(255, 255, 255, 0.5);
+    transform: translateX(-50%);
 }
