@@ -1,0 +1,61 @@
+@import url('https://fonts.googleapis.com/css2?family=Cherry+Bomb+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Cherry+Bomb+One&family=PT+Sans:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+
+:root {
+    --primary-color: #615fff;/*#9C27B0; #9C27B0;*/
+    --primary2-color: #4d4aff;
+    --secondary-color: #333;
+    --background-color: #121212;
+    --secondary-background-color: #1E1E1E;
+    --card-background-color: #252525;
+    --text-color: #E0E0E0;
+    --subtle-text-color: #B0B0B0;
+    --font-family: 'PT Sans', sans-serif;
+    --font-size: 20px;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: var(--background-color);
+    font-family: var(--font-family);
+    font-size: var(--font-size);
+    color: var(--text-color);
+}
+
+header {
+    border-bottom: 1px solid var(--secondary-color);
+}
+
+header h2 {
+    font-family: 'Cherry Bomb One';
+    font-size: 40px;
+}
+
+header a:hover {
+    border-bottom: 2px solid var(--primary-color);
+}
+
+h1 {
+    font-family: 'Cherry Bomb One';
+    font-size: 50px !important;
+    line-height: 1.3cm;
+}
+
+main a {
+    background: var(--primary-color);
+}
+
+main a:hover {
+    box-shadow: 0 0 20px var(--primary-color); /* Stronger glow effect */
+}
+
+main a:active {
+    outline: 2px solid var(--primary2-color);
+    outline-offset: 4px;
+    box-shadow: 0 0 20px 5px var(--primary2-color);
+}
