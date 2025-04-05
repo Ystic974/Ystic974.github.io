@@ -1,0 +1,294 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+    <link rel="stylesheet" href="../resources/css/style.css">
+    <title>Eloi PAYET &#8227; e-Portfolio</title>
+    <script>
+        function openOverlay() {
+            document.body.classList.add('no-scroll');
+        }
+
+        function closeOverlay() {
+            document.body.classList.remove('no-scroll');
+        }
+    </script>
+</head>
+<body>
+    <div class="flex flex-col">
+        <header class="flex place-items-center place-content-between pl-8 pr-8">
+            <h2 class="p-4 pl-12 text-center">Eloi PAYET.</h2>
+            <nav class="flex place-content-around">
+                <a href="../index.html" class="p-8 w-1/3 text-center">Home</a>
+                <a href="#" class="selected-item-menu p-8 w-1/3 text-center">Projects</a>
+                <a href="contact.html" class="p-8 w-1/3 text-center">Contact</a>
+            </nav>
+        </header>
+
+        <div class="container w-full m-auto mt-20 flex-grow">
+            <div class="main-section flex flex-col w-full">
+                <div class="flex flex-col w-1/2 m-auto">
+                    <h1 class="font-bold mb-12 text-center">
+                        Discover my projects
+                    </h1>
+
+                    <p class="text-center">
+                        Pendant mes études, j'ai eu l'occasion de travailler sur pas mal de projet sur différents
+                        langages de programmation, frameworks et technologies.
+                    </p>
+                    <p class="text-center">
+                        J'ai recencé et détaillé ici, quelques uns de mes plus gros projets ou des projets qui 
+                        me tiennent à coeur ou que je trouve intéressant.
+                    </p>
+                </div>
+
+        
+                <main class="main-projects w-full mt-20">
+                    <h2><span class="font2">#</span> Projets en entreprise</h2>
+
+                    <div class="cards-rows flex place-content-around">
+                        <a href="#project-details-1" class="w-1/4">
+                            <div class="card">
+                                <img src="../resources/images/devtool.png" alt="Image projet">
+                                <div class="card-tags flex p-2">
+                                    <div class="tag">Java</div>
+                                    <div class="tag ml-2">SpringBoot</div>
+                                </div>
+                                <div class="card-info flex flex-col">
+                                    <h3 class="mb-4 text-center">Librairie Java, Génération de PDF</h3>
+                                    <p class="pl-4 pr-4">
+                                        Lors de mon stage en entreprise, j'ai pu réaliser une librairie Java SpringBoot
+                                        sous Maven permettant de générer des PDF grâce au moteur de templates <em>FreeMarker</em>
+                                        et <em>Gotenberg</em> pour la conversion d'un fichier HTML en PDF.
+                                    </p>
+                                    <i class="fa-solid fa-arrow-right fa-2x self-end pb-4 pr-8"></i>
+                                </div>
+                            </div>
+                        </a>
+
+                        <a href="#project-details-2" class="w-1/4">
+                            <div class="card">
+                                <img src="../resources/images/vuejs.png" alt="Image projet">
+                                <div class="card-tags flex p-2">
+                                    <div class="tag">VueJS</div>
+                                    <div class="tag ml-2">Oracle</div>
+                                </div>
+                                <div class="card-info flex flex-col">
+                                    <h3 class="mb-4 text-center">Application d'élevages caprin</h3>
+                                    <p class="pl-4 pr-4">
+                                        Lors de mon alternance, j'ai pu travailler sur une application, côté front-end, qui permet
+                                        la gestion d'exploitations caprin. J'ai modifié et produit des écrans notamment pour la
+                                        création d'exploitation ainsi que la création et gestion des contrats liés à ces exploitations.
+                                    </p>
+                                    <i class="fa-solid fa-arrow-right fa-2x self-end pb-4 pr-8"></i>
+                                </div>
+                            </div>
+                        </a>
+
+                        <a href="#project-details-3" class="w-1/4">
+                            <div class="card">
+                                <img src="../resources/images/springboot.png" alt="Image projet">
+                                <div class="card-tags flex p-2">
+                                    <div class="tag">Java</div>
+                                    <div class="tag ml-2">SpringBoot</div>
+                                    <div class="tag ml-2">Oracle</div>
+                                </div>
+                                <div class="card-info flex flex-col">
+                                    <h3 class="mb-4 text-center">Bilan d'exploitation de cheptels</h3>
+                                    <p class="pl-4 pr-4">
+                                        Lors de mon alternance, j'ai pu travailler sur le traitement de fichiers <em>csv</em>
+                                        du côté back-end en réalisant une batterie de calculs sur des données précises et en les insérant en BDD. <br>
+                                        L'objectif était de pouvoir créer un PDF pour le bilan annuel d'une exploitation.
+                                    </p>
+                                    <i class="fa-solid fa-arrow-right fa-2x self-end pb-4 pr-8"></i>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+
+                    <h2 class="mt-48"><span class="font2">#</span> Projets universitaires</h2>
+                    <div class="cards-rows flex place-content-around">
+                        <a href="#project-details-4" class="w-1/4">
+                            <div class="card">
+                                <img src="../resources/images/videogamesmanager.png" alt="">
+                                <div class="card-tags flex p-2">
+                                    <div class="tag">Flutter</div>
+                                    <div class="tag ml-2">Jetpack Compose</div>
+                                </div>
+                                <div class="card-info flex flex-col">
+                                    <h3 class="mb-4 text-center">Videogames Manager</h3>
+                                    <p class="pl-4 pr-4">
+                                        Lors de mon stage en entreprise, j'ai pu réaliser une librairie Java SpringBoot
+                                        sous Maven permettant de générer des PDF grâce au moteur de templates <em>FreeMarker</em>
+                                        et <em>Gotenberg</em> pour la conversion d'un fichier HTML en PDF.
+                                    </p>
+                                    <i class="fa-solid fa-arrow-right fa-2x self-end pb-4 pr-8"></i>
+                                </div>
+                            </div>
+                        </a>
+                        <a href="#project-details-5" class="w-1/4">
+                            <div class="card">
+                                <img src="../resources/images/troover.png" alt="Image projet">
+                                <div class="card-tags flex p-2">
+                                    <div class="tag">Flutter</div>
+                                </div>
+                                <div class="card-info flex flex-col">
+                                    <h3 class="mb-4 text-center">Troover</h3>
+                                    <p class="pl-4 pr-4">
+                                        Projet annuel de 3ème et dernière année de BUT Informatique. l'application est une 
+                                        plateforme de recrutement qui permet de mettre en relation des étudiants en recherche
+                                        de stage et alternance avec des entreprises.
+                                    </p>
+                                    <i class="fa-solid fa-arrow-right fa-2x self-end pb-4 pr-8"></i>
+                                </div>
+                            </div>
+                        </a>
+                        <a href="#project-details-6" class="w-1/4">
+                            <div class="card">
+                                <img src="../resources/images/sbmail.png" alt="Image projet">
+                                <div class="card-tags flex p-2">
+                                    <div class="tag">Flutter</div>
+                                    <div class="tag ml-2">ESP 32</div>
+                                </div>
+                                <div class="card-info flex flex-col">
+                                    <h3 class="mb-4 text-center">Boite aux lettres connectée</h3>
+                                    <p class="pl-4 pr-4">
+                                        Lors de mes cours d'IoT (Internet of Things), j'ai pu réalisé en binome une boite
+                                        aux lettre connectée grâce à un ESP32-Cam. J'ai ensuite développé une application mobile
+                                        pour pouvoir communiquer avec cette boite aux lettres.
+                                    </p>
+                                    <i class="fa-solid fa-arrow-right fa-2x self-end pb-4 pr-8"></i>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                </main>
+
+                <div class="project-sections">
+                    <section id="project-details-1">
+                        <a href="#" class="close-overlay"><i class="fa-solid fa-close"></i></a>
+                        <h2>Librairie Java SpringBoot pour la génération de PDF</h2>
+                    
+                        <div class="section-container flex place-content-between">
+                            <main class="w-[48%] h-full flex flex-col flex-wrap place-content-around">
+                                <img src="../resources/images/springboot-sbg.png" class="mr-auto ml-auto w-1/2" alt="Logo springboot">
+                                <img src="../resources/images/devtool.png" alt="Devtool intégré">
+                            </main>
+
+                            <aside class="w-[48%] overflow-y-auto max-h-full">
+                                <h3 class="font-bold mb-8 mt-8">Description détaillée</h3>
+                                <p class="mb-8">
+                                    Lors de mon stage chez <a href="https://www.okteo.fr/" target="_blank">OKTEO</a>, j'ai pus faire mes premiers pas
+                                    sur le framework <em>Spring Boot</em> sur une base de <em>Java</em>. <br>
+                                    Le sujet de mon stage était donc de réaliser une <em>librairie</em> permettant de générer des PDF, côté <em>Back-end</em>
+                                    puis de les renvoyer à la partie <em>front-end</em> pour pouvoir les télécharger par exemple.
+                                </p>
+                                <p>
+                                    J'ai donc réalisé cette librairie sur ce framework en utilisant le moteur de template <em>FreeMarker</em> qui me permet,
+                                    à partir d'un template HTML créé, de le remplir avec les données ou images souhaités en intégrant des graphique via <em>Chart.js</em> ou <em>ECharts</em>.
+                                </p>
+                                <p class="mb-8">
+                                    Une fois le fichier HTML rempli et généré, je l'envoie à une instance de <em>Gotenberg</em>, hébergé sur un serveur interne,
+                                    pour obtenir un PDF personnalisé avec la possibilité d'y ajouter une page de garde ainsi qu'une en-tête, un pied de page et une pagination.
+                                </p>
+                                <p>
+                                    Pour faciliter le développeur à l'utilisation de ma librairie, j'y ai ajouté d'inititive un outil de développement.
+                                    Son but est d'éviter que le développeur se perde dans le code d'un projet à la recherche de chaque méthodes qui créent un PDF.
+                                    Grâce à une annotation à ajouter à une méthode de ce genre, cette dernière apparait sur l'outil de développement et le développeur
+                                    peut donc tester sa méthode directement sur cette outil en remplissant ses champs et en ayant la possibilité de prévisualiser le futur PDF
+                                    ou de directement de télécharger.
+                                </p>
+                            </aside>
+                        </div>
+                    </section>
+                    <section id="project-details-2">
+                        <a href="#" class="close-overlay"><i class="fa-solid fa-close"></i></a>
+                        <h2>Application d'élevages caprin</h2>
+                    
+                        <div class="section-container flex place-content-between">
+                            <main class="w-[48%] h-full flex flex-col flex-wrap place-content-around">
+                                <img src="../resources/images/vuejs.png" class="mr-auto ml-auto w-1/2" alt="Logo VueJS">
+                                <img src="" alt="Devtool intégré">
+                            </main>
+
+                            <aside class="w-[48%] overflow-y-auto max-h-full">
+                                <h3 class="font-bold mb-8 mt-8">Description détaillée</h3>
+                            </aside>
+                        </div>
+                    </section>
+                    <section id="project-details-3">
+                        <a href="#" class="close-overlay"><i class="fa-solid fa-close"></i></a>
+                        <h2>Bilan d'exploitation de cheptels</h2>
+                    
+                        <div class="section-container flex place-content-between">
+                            <main class="w-[48%] h-full flex flex-col flex-wrap place-content-around">
+                                <img src="../resources/images/springboot-sbg.png" class="mr-auto ml-auto w-1/2" alt="Logo springboot">
+                                <img src="../resources/images/oracle-sbg.png" class="mr-auto ml-auto w-1/2" alt="Logo oracle">
+                            </main>
+
+                            <aside class="w-[48%] overflow-y-auto max-h-full">
+                                <h3 class="font-bold mb-8 mt-8">Description détaillée</h3>
+                            </aside>
+                        </div>
+                    </section>
+                    <section id="project-details-4">
+                        <a href="#" class="close-overlay"><i class="fa-solid fa-close"></i></a>
+                        <h2>Videogames Manager</h2>
+                    
+                        <div class="section-container flex place-content-between">
+                            <main class="w-[48%] h-full flex flex-col flex-wrap place-content-around">
+                                <img src="../resources/images/screen-vgm.png" class="mr-auto ml-auto w-[45%]" alt="Capture d'écran app">
+                            </main>
+
+                            <aside class="w-[48%] overflow-y-auto max-h-full">
+                                <h3 class="font-bold mb-8 mt-8">Description détaillée</h3>
+                            </aside>
+                        </div>
+                    </section>
+                    <section id="project-details-5">
+                        <a href="#" class="close-overlay"><i class="fa-solid fa-close"></i></a>
+                    </section>
+                    <section id="project-details-6">
+                        <a href="#" class="close-overlay"><i class="fa-solid fa-close"></i></a>
+                        <h2>Boite aux lettres connectées - SB Mail</h2>
+                    
+                        <div class="section-container flex place-content-between">
+                            <main class="w-[48%] h-full flex flex-col flex-wrap place-content-around">
+                                <img src="../resources/images/screen-sbmail.png" class="mr-auto ml-auto w-[45%]" alt="Capture d'écran app">
+                            </main>
+
+                            <aside class="w-[48%] overflow-y-auto max-h-full">
+                                <h3 class="font-bold mb-8 mt-8">Description détaillée</h3>
+                            </aside>
+                        </div>
+                    </section>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <footer class="w-full mt-48">
+        <div class="footer-container relative flex w-full  pt-12 pb-12">
+            <div class="footer-separator"></div>
+
+            <section class="footer-nav flex flex-col items-center justify-center w-1/2">
+                <a href="../index.html" class="mb-4 text-center">Home</a>
+                <a href="projects.html" class="mb-4 text-center">Projects</a>
+                <a href="contact.html" class="text-center">Contact</a>
+            </section>
+            <section class="w-1/2 flex flex-col items-center justify-center">
+                <p class="mb-4">Follow me on my social media</p>
+                <div class="social-media flex place-content-around w-1/3">
+                    <a href="https://www.linkedin.com/in/eloi-payet-192519253/" target="_blank" title="@eloi" class="p-4 rounded-full"><i class="fa-brands fa-linkedin-in fa-2x"></i></a>
+                    <a href="https://www.instagram.com/eloi_01_974/" target="_blank" title="@eloi_01_974" class="p-4 rounded-full"><i class="fa-brands fa-instagram fa-2x"></i></a>
+                    <a href="https://wa.me/+330659650698?text=Salut%20Eloi" target="_blank" title="@eloi" class="p-4 rounded-full"><i class="fa-brands fa-whatsapp fa-2x"></i></a>
+                </div>
+            </section>
+        </div>
+        <p class="copyright w-full text-center p-2">2025 &copy; All rights reserved</p>
+    </footer>
+</body>
+</html>

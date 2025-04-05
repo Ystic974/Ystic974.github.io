@@ -27,6 +27,10 @@ body {
     color: var(--text-color);
 }
 
+body.no-scroll {
+    overflow: hidden;
+}
+
 header {
     border-bottom: 1px solid var(--secondary-color);
 }
@@ -37,8 +41,31 @@ header h2 {
 }
 
 header a:hover {
+    background-color: var(--card-background-color);
     border-bottom: 2px solid var(--primary-color);
 }
+
+header .selected-item-menu {
+    border-bottom: 2px solid var(--primary-color);
+}
+
+.font2 {
+    font-family: 'Cherry Bomb One';
+}
+
+p a {
+    text-decoration: underline;
+    cursor: pointer;
+}
+p a:hover {
+    color: var(--primary-color);
+}
+
+/*
+# ###############################################
+# HOME 
+# ###############################################
+*/
 
 h1 {
     font-family: 'Cherry Bomb One';
@@ -46,19 +73,139 @@ h1 {
     line-height: 1.3cm;
 }
 
-main a {
+main.main-home a {
     background: var(--primary-color);
 }
 
-main a:hover {
+main.main-home a:hover {
     box-shadow: 0 0 20px var(--primary-color);
 }
 
-main a:active, footer .social-media a:active {
+main.main-home a:active, footer .social-media a:active {
     outline: 2px solid var(--primary2-color);
     outline-offset: 4px;
 }
 
+/*
+# ###############################################
+# PROJECTS
+# ###############################################
+*/
+
+main.main-projects h2 {
+    font-size: 2em;
+    width: 100%;
+    padding-bottom: 1rem;
+    margin-bottom: 4rem;
+    border-bottom: 1px solid var(--secondary-color);
+}
+main.main-projects .card {
+    display: flex;
+    flex-direction: column;
+    background-color: var(--card-background-color);
+    height: 600px;
+    overflow: hidden;
+}
+main.main-projects .card img {
+    width: 100%;
+    height: 33%;
+    object-fit: cover;
+}
+main.main-projects .card .card-info {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+}
+main.main-projects .card .card-info p {
+    flex: 1;
+    overflow: auto;
+}
+main.main-projects .card h3 {
+    padding: 4px 0 4px 0;
+    background-color: var(--secondary-background-color);
+}
+main.main-projects a:hover .card {
+    box-shadow: 0 0 50px var(--primary-color);
+}
+
+.tag {
+    background-color: var(--primary-color);
+    padding: 0 1rem 0 1rem;
+    border-radius: 99999px;
+}
+
+.project-sections h2 {
+    flex-shrink: 0;
+    font-size: 2rem;
+    margin-bottom: 2rem;
+}
+.project-sections section {
+    display: none;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: var(--secondary-color);
+    width: 80%;
+    height: 80vh;
+    z-index: 100;
+    padding: 2rem;
+    border-radius: 8px;
+}
+
+.project-sections::before {
+    display: none;
+    content: '';
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.5);
+    backdrop-filter: blur(5px);
+    -webkit-backdrop-filter: blur(5px);
+    z-index: 99;
+}
+
+.project-sections section:target ~ .project-sections::before,
+html:has(.project-sections section:target) .project-sections::before {
+    display: block;
+}
+
+.project-sections section:target {
+    display: flex;
+    flex-direction: column;
+}
+
+.project-sections .section-container {
+    flex: 1;
+    display: flex;
+    gap: 1rem;
+    overflow: hidden;
+}
+
+html:has(.project-sections section:target) {
+    overflow: hidden;
+}
+
+html:has(.project-sections section:target) body {
+    overflow: hidden;
+}
+
+.close-overlay {
+    position: absolute;
+    top: 20px;
+    right: 30px;
+    color: var(--text-color);
+    font-size: 30px;
+    text-decoration: none;
+}
+
+/*
+# ###############################################
+# CONTACT
+# ###############################################
+*/
 
 footer {
     background: var(--card-background-color);
