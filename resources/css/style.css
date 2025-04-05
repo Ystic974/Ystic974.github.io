@@ -1,0 +1,238 @@
+@import url('https://fonts.googleapis.com/css2?family=Cherry+Bomb+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Cherry+Bomb+One&family=PT+Sans:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+
+:root {
+    --primary-color: #615fff;/*#9C27B0; #9C27B0;*/
+    --primary2-color: #4d4aff;
+    --secondary-color: #333;
+    --background-color: #121212;
+    --secondary-background-color: #1E1E1E;
+    --card-background-color: #252525;
+    --text-color: #E0E0E0;
+    --subtle-text-color: #B0B0B0;
+    --font-family: 'PT Sans', sans-serif;
+    --font-size: 20px;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: var(--background-color);
+    font-family: var(--font-family);
+    font-size: var(--font-size);
+    color: var(--text-color);
+}
+
+body.no-scroll {
+    overflow: hidden;
+}
+
+header {
+    border-bottom: 1px solid var(--secondary-color);
+}
+
+header h2 {
+    font-family: 'Cherry Bomb One';
+    font-size: 40px;
+}
+
+header a:hover {
+    background-color: var(--card-background-color);
+    border-bottom: 2px solid var(--primary-color);
+}
+
+header .selected-item-menu {
+    border-bottom: 2px solid var(--primary-color);
+}
+
+.font2 {
+    font-family: 'Cherry Bomb One';
+}
+
+p a {
+    text-decoration: underline;
+    cursor: pointer;
+}
+p a:hover {
+    color: var(--primary-color);
+}
+
+/*
+# ###############################################
+# HOME 
+# ###############################################
+*/
+
+h1 {
+    font-family: 'Cherry Bomb One';
+    font-size: 50px !important;
+    line-height: 1.3cm;
+}
+
+main.main-home a {
+    background: var(--primary-color);
+}
+
+main.main-home a:hover {
+    box-shadow: 0 0 20px var(--primary-color);
+}
+
+main.main-home a:active, footer .social-media a:active {
+    outline: 2px solid var(--primary2-color);
+    outline-offset: 4px;
+}
+
+/*
+# ###############################################
+# PROJECTS
+# ###############################################
+*/
+
+main.main-projects h2 {
+    font-size: 2em;
+    width: 100%;
+    padding-bottom: 1rem;
+    margin-bottom: 4rem;
+    border-bottom: 1px solid var(--secondary-color);
+}
+main.main-projects .card {
+    display: flex;
+    flex-direction: column;
+    background-color: var(--card-background-color);
+    height: 600px;
+    overflow: hidden;
+}
+main.main-projects .card img {
+    width: 100%;
+    height: 33%;
+    object-fit: cover;
+}
+main.main-projects .card .card-info {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+}
+main.main-projects .card .card-info p {
+    flex: 1;
+    overflow: auto;
+}
+main.main-projects .card h3 {
+    padding: 4px 0 4px 0;
+    background-color: var(--secondary-background-color);
+}
+main.main-projects a:hover .card {
+    box-shadow: 0 0 50px var(--primary-color);
+}
+
+.tag {
+    background-color: var(--primary-color);
+    padding: 0 1rem 0 1rem;
+    border-radius: 99999px;
+}
+
+.project-sections h2 {
+    flex-shrink: 0;
+    font-size: 2rem;
+    margin-bottom: 2rem;
+}
+.project-sections section {
+    display: none;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: var(--secondary-color);
+    width: 80%;
+    height: 80vh;
+    z-index: 100;
+    padding: 2rem;
+    border-radius: 8px;
+}
+
+.project-sections::before {
+    display: none;
+    content: '';
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.5);
+    backdrop-filter: blur(5px);
+    -webkit-backdrop-filter: blur(5px);
+    z-index: 99;
+}
+
+.project-sections section:target ~ .project-sections::before,
+html:has(.project-sections section:target) .project-sections::before {
+    display: block;
+}
+
+.project-sections section:target {
+    display: flex;
+    flex-direction: column;
+}
+
+.project-sections .section-container {
+    flex: 1;
+    display: flex;
+    gap: 1rem;
+    overflow: hidden;
+}
+
+html:has(.project-sections section:target) {
+    overflow: hidden;
+}
+
+html:has(.project-sections section:target) body {
+    overflow: hidden;
+}
+
+.close-overlay {
+    position: absolute;
+    top: 20px;
+    right: 30px;
+    color: var(--text-color);
+    font-size: 30px;
+    text-decoration: none;
+}
+
+/*
+# ###############################################
+# CONTACT
+# ###############################################
+*/
+
+footer {
+    background: var(--card-background-color);
+}
+footer section.footer-nav {
+    font-size: 16px;
+}
+footer section.footer-nav a:hover {
+    text-decoration: underline;
+}
+footer .social-media a:hover {
+    background: var(--primary-color);
+}
+footer .social-media a:active {
+    background: var(--primary-color);
+}
+footer p.copyright {
+    background: var(--background-color);
+    font-size: 16px;
+}
+
+.footer-separator {
+    position: absolute;
+    left: 50%;
+    top: 15%;
+    height: 70%;
+    width: 1px;
+    background-color: rgba(255, 255, 255, 0.5);
+    transform: translateX(-50%);
+}
